@@ -1,0 +1,465 @@
+.image-container img {
+    margin-right: 20px; /* Add space between the logo and social media icons */
+  }
+  .top-header-social a {
+    color: #333; /* Default color for icons */
+    transition: color 0.3s; /* Smooth hover effect */
+  }
+  .top-header-social a:hover {
+    color: #007bff; /* Change to primary color on hover */
+  }
+  .carousel-item img {
+    max-height: 300px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image fits nicely */
+    width: 100%; /* Make the image stretch across the carousel */
+  }
+  .text-container {
+    text-align: center; /* Center align the text */
+    margin-top: 30px; /* Add a top margin */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Use modern font */
+    line-height: 1.5; /* Increase spacing for readability */
+  }
+  .text-container h1 {
+    font-size: 3.5rem; /* Large font size */
+    color: black; /* Use black color */
+    margin-bottom: 10px; /* Add space below the heading */
+  }
+
+  /* Styling for the subheading */
+  .text-container h3 {
+    font-size: 2.5rem; /* Slightly smaller font size */
+    color: blue; /* Use a blue shade (#007BFF is Bootstrap primary blue) */
+    margin-top: 0; /* Remove gap above */
+  }
+  .abcd{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    text-align: center;
+  }
+.row{
+    text-align: center;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    margin-top: 40px !important;
+}
+.ab{
+   
+    background-color: black;
+    color: #fff; /* White text */
+  
+}
+.button-container {
+    font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin: 0;
+  background-color: rgba(253, 253, 254, 0.959);
+    display: flex;
+    gap: 80px;
+  }
+  
+  /* Button Styles */
+  .motion-button {
+    background: linear-gradient(135deg, #0D47A1, #1565C0);
+
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover Effect */
+  .motion-button:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  
+  /* Active (Click) Effect */
+  .motion-button:active {
+    transform: scale(0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   }
+
+   .bod {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #f3f9fd; /* Light blue background */
+}
+
+.container1 {
+  display: flex;
+  gap: 50px;
+}
+
+/* Box Styles */
+.box {
+  width: 300px;
+  height: 300px;
+  background: white;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure images stay inside the box */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill the box */
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1); /* Motion effect */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+ background: linear-gradient(135deg, #0D47A1, #1565C0);
+}
+
+.box:hover img {
+  opacity: 0.7; /* Slight fade effect on hover */
+}
+
+/* Popup Styles */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vh; /* Add margin from all sides */
+  height: 80vh;
+  /* background: linear-gradient(135deg, #a1c4fd, #c2e9fb); */
+  background: #dfe2e6;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.popup-content {
+  padding: 20px;
+  text-align: left;
+  color: #01060c;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content h2 {
+text-align: center;
+    margin-bottom: 20px;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  text-decoration: solid;
+  color: darkblue;
+ 
+
+  
+}
+
+.popup-content p {
+  font-size: 18px;
+  color: #424242;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2196f3;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.close-btn:hover {
+  color: #f44336; /* Red on hover */
+  transform: scale(1.2);
+}
+
+.testimonial-container {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    height: 350px;
+    overflow: hidden;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    gap: 20px;
+}
+
+.testimonial-box {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Default margin for non-middle boxes */
+    transition: all 0.5s ease;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Middle box styling */
+.testimonial-box.middle {
+    background: linear-gradient(135deg, #003366, #004080);
+    color: white;
+    border-radius: 10px;
+    margin-top: 0; /* Raise the middle box */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Circle for Photo */
+.photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 10px auto;
+}
+
+/* Name and Post Styling */
+.name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.post {
+    font-size: 0.9em;
+    color: inherit;
+}
+
+/* Review Styling */
+.review {
+    font-size: 0.95em;
+    margin-top: 10px;
+}
+
+/* General Reset */
+.navbar {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-color: #01060c;
+}
+
+nav {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #0059b3;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 9999;
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 5px 1px;
+}
+
+.dropdown-menu a {
+    color: #333;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: #003366;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: static;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links .icon {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links .icon:hover {
+    color: #0078ff; /* Bright blue for hover */
+}
+
+.social-links .fb:hover {
+    color: #4267B2; /* Facebook Blue */
+}
+
+.social-links .twitter:hover {
+    color: #1DA1F2; /* Twitter Blue */
+}
+
+.social-links .insta:hover {
+    color: #C13584; /* Instagram Pinkish Purple */
+}
+
+/* Auth Buttons */
+.login-signup {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: #0078ff;
+    border: 1px solid #0078ff;
+}
+
+.login-btn:hover {
+    background-color: #0078ff;
+    color: white;
+}
+
+.signup-btn {
+    background-color: #0078ff;
+    color: white;
+    border: 1px solid #0078ff;
+}
+
+.signup-btn:hover {
+    background-color: #005bb5;
+}
