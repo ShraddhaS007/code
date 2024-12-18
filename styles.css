@@ -113,6 +113,8 @@
 .container1 {
   display: flex;
   gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Box Styles */
@@ -155,13 +157,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80vh; /* Add margin from all sides */
-  height: 80vh;
+  width: 80%; /* Add margin from all sides */
+  height:auto;
   /* background: linear-gradient(135deg, #a1c4fd, #c2e9fb); */
   background: #dfe2e6;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   z-index: 1000;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .popup-content {
@@ -207,6 +211,17 @@ text-align: center;
   color: #f44336; /* Red on hover */
   transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    .container1 {
+      flex-direction: column; /* Stack boxes vertically */
+      gap: 10px; /* Reduce gap */
+    }
+  
+    .popup {
+      width: 95%; /* Adjust popup width for smaller screens */
+    }
+  }
 
 .testimonial-container {
     position: relative;
