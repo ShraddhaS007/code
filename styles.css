@@ -74,6 +74,18 @@
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
+  @media (max-width: 768px) {
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center align buttons in a column */
+    }
+  
+    .motion-button {
+      width: 90%; /* Take 90% of the container width */
+      max-width: none; /* Remove the max-width restriction */
+      margin-bottom: 10px; /* Add spacing between stacked buttons */
+    }
+  }
   
   /* Hover Effect */
   .motion-button:hover {
