@@ -96,5 +96,34 @@ const wrapper = document.getElementById("testimonialWrapper");
         wrapper.style.transform = `translateX(${-33.33 * currentIndex}%)`;
         testimonials[currentIndex].classList.add("middle");
 
-       
+// document.addEventListener("DOMContentLoaded", () => {
+//           const hamburgerMenu = document.querySelector(".hamburger-menu");
+//           const navLinks = document.querySelector(".nav-links");
+      
+//           // Toggle nav-links visibility
+//           hamburgerMenu.addEventListener("click", () => {
+//               navLinks.classList.toggle("active");
+//           });
+//       });
+      
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const navLinks = document.querySelector(".nav-links");
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  // Toggle nav-links visibility
+  hamburgerMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+  });
+
+  // Handle dropdown toggling
+  dropdowns.forEach((dropdown) => {
+      const toggle = dropdown.querySelector(".dropdown-toggle");
+      toggle.addEventListener("click", (e) => {
+          e.preventDefault(); // Prevent navigation
+          dropdown.classList.toggle("active");
+      });
+  });
+});
+
         
