@@ -305,7 +305,11 @@ text-align: center;
     font-size: 0.95em;
     margin-top: 10px;
 }
-
+@media (max-width: 580px) {
+  .testimonial-container{
+    height: 500px;
+  }
+}
 /* General Reset */
 .navbar {
     margin: 0;
@@ -495,7 +499,12 @@ nav {
 .social-links .insta:hover {
     color: #C13584; /* Instagram Pinkish Purple */
 }
-
+.social-links .youtube:hover {
+  color: red; /* Instagram Pinkish Purple */
+}
+.social-links .whatsapp:hover {
+  color: rgb(0, 255, 60); /* Instagram Pinkish Purple */
+}
 /* Auth Buttons */
 .login-signup {
     display: flex;
@@ -531,4 +540,112 @@ nav {
 
 .signup-btn:hover {
     background-color: #005bb5;
+}
+.qw{
+   width: 50vh !important;
+}
+/* FAQ Section Styling */
+/* FAQ Section Styling */
+.faq-section {
+  max-width: 150vh;
+  margin: 20px auto;
+ 
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f3f2f2f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-section h2 {
+ 
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #003366;
+}
+
+/* FAQ Container with limited height */
+.faq-container {
+  display: block;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 500px; /* Show 5 questions (approx 80px each) */
+  overflow-y: scroll; /* Enable scrolling for extra questions */
+  scrollbar-width: thin; /* Firefox: make scrollbar thinner */
+  scrollbar-color: #003366 #f6f5f7; /* Firefox: custom scrollbar colors */
+  padding-right: 10px; /* Prevent text from hiding behind the scrollbar */
+  
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+.faq-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.faq-container::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 8px;
+}
+
+.faq-container::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+/* FAQ Item Styles */
+.faq-item {
+  padding: 0px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #003366;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f0f8ff;
+}
+
+.toggle-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-section {
+      padding: 15px;
+  }
+  .faq-container {
+      max-height: calc(5 * 70px); /* Adjust max height for smaller screens */
+  }
+}
+
+.rs{
+  background-color: #f3f9fd; /* Light blue background */
 }
